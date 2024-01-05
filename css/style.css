@@ -179,9 +179,10 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 88%, rgba(0, 0, 0, 0));
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -193,11 +194,11 @@ body {
     rgba(255, 255, 255, 1) 8%,
     hsla(0, 0%, 100%, 0) 50%
   );
-}
+} */
 
 .hero .content {
   padding: 1.4rem 7%;
-  max-width: 60rem;
+  position: fixed;
 }
 
 .hero .content h1 {
@@ -262,6 +263,10 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  mask-image: url(../img/pizza-slice.svg);
+  mask-size: 70%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .about .row .content {
